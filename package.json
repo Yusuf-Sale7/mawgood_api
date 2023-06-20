@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon index.js",
-    "migrate": "nodemon migrate.js"
+    "server": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
