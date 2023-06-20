@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphones",
+    "nameAR": "موبايلات",
+    "category": "smartphones",
+    "quantity": 90,
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 2,
+    "name": "Laptops",
+    "nameAR": "لاب توب",
+    "category": "laptops",
+    "quantity": 38,
+    "cover": "https://i.postimg.cc/jqWz90LV/2.png"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "username": "yusuf_sale7",
+    "items": [
+      {
+        "id": 1,
+        "quantity": 5,
+        "price": 549
+      },
+      {
+        "id": 3,
+        "quantity": 1,
+        "price": 699
+      }
+    ],
+    "shipping": 10,
+    "totalPrice": 3444
+  }
+]

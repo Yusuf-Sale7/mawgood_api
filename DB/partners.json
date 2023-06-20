@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Partner 1",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 2,
+    "name": "Partner 2",
+    "cover": "https://i.postimg.cc/jqWz90LV/2.png"
+  },
+  {
+    "id": 3,
+    "name": "Partner 3",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 4,
+    "name": "Partner 4",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 5,
+    "name": "Partner 5",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 6,
+    "name": "Partner 6",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  },
+  {
+    "id": 7,
+    "name": "Partner 7",
+    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+  }
+]
