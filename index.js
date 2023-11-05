@@ -1149,5 +1149,5 @@ app.post("/api/contact", (req, res) => {
 
 // Run Port
 app.listen(Port, () => {
-  console.log("Server Running On Port 7000");
+  console.log(`Server Running On Port ${Port}`);
 });
