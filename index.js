@@ -17,6 +17,7 @@ app.use(express.json());
 
 const SECRET_KEY = "122122122";
 const expiresIn = "1h";
+const Port = process.env.PORT || 7000;
 
 function createToken(payload) {
   return jwt.sign(payload, SECRET_KEY, { expiresIn });
@@ -1147,6 +1148,6 @@ app.post("/api/contact", (req, res) => {
 });
 
 // Run Port
-app.listen("7000", () => {
+app.listen(Port, () => {
   console.log("Server Running On Port 7000");
 });
