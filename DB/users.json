@@ -9,97 +9,76 @@
     "state": "Shebin El-Kom",
     "street": "Paris street",
     "favorites": [
-      1,
-      3
+      4
     ],
     "inCart": [
-      1,
-      3
+      2,
+      7,
+      7,
+      4
     ],
     "password": "123456"
   },
   {
     "firstName": "Joe",
-    "lastName": "Doe",
+    "lastName": "S",
     "username": "joe",
     "email": "joe@mail.com",
-    "mobile": "0123456789",
+    "mobile": "01234567890",
     "city": "Cairo",
     "state": "Nasr city",
     "street": "90s street",
-    "favorites": [],
+    "favorites": [
+      3,
+      2
+    ],
+    "inCart": [
+      2,
+      1
+    ],
     "password": "123123"
-  },
-  {
-    "firstName": "Ahmad",
-    "lastName": "M",
-    "username": "a7mad",
-    "email": "ahmad@mail.com",
-    "mobile": "0123456789",
-    "city": "Giza",
-    "state": "Embaba",
-    "street": "Ebmaba street",
-    "favorites": [],
-    "password": "123456"
-  },
-  {
-    "firstName": "Yusuf",
-    "lastName": "Saleh",
-    "username": "john_7",
-    "email": "john@mail.com",
-    "mobile": "11111111212120",
-    "city": "Menoufia",
-    "state": "1",
-    "street": "11",
-    "favorites": [],
-    "password": "22222222222222222222"
   },
   {
     "firstName": "Mhmd",
     "lastName": "Mahmoud",
     "username": "m7md",
-    "email": "m7md@mail.com",
-    "mobile": "01012122122",
-    "city": "Menoufia",
-    "state": "Sadat",
-    "street": "street1",
+    "email": "mhmd@mail.com",
+    "mobile": "01002211212",
+    "city": "Cairo",
+    "state": "Nasr City",
+    "street": "21 Street",
     "favorites": [],
+    "inCart": [],
+    "password": "123123"
+  },
+  {
+    "firstName": "Joe",
+    "lastName": "Saleh",
+    "username": "joe2",
+    "email": "joe2@mail.com",
+    "mobile": "01002211322",
+    "city": "Cairo",
+    "state": "Sadat",
+    "street": "21",
+    "favorites": [],
+    "inCart": [],
     "password": "111111"
   },
   {
-    "firstName": "a",
-    "lastName": "b",
-    "username": "aaa",
-    "email": "a@a.com",
-    "mobile": "01111111223",
-    "city": "Cairo",
-    "state": "a",
-    "street": "a",
-    "favorites": [],
-    "password": "aaaaaa"
-  },
-  {
-    "firstName": "q",
-    "lastName": "q",
-    "username": "qqq",
-    "email": "q@q.com",
-    "mobile": "01222222222",
-    "city": "Cairo",
-    "state": "q",
-    "street": "q",
-    "favorites": [],
-    "password": "qqqqqq"
-  },
-  {
-    "firstName": "m",
-    "lastName": "m",
-    "username": "mmm",
-    "email": "m@m.com",
-    "mobile": "01111111111",
-    "city": "Cairo",
-    "state": "m,,",
-    "street": "maa",
-    "favorites": [],
-    "password": "mmmmmmmm"
+    "firstName": "Youssef",
+    "lastName": "Abdulhamid",
+    "username": "youssef",
+    "email": "youssef@mail.com",
+    "mobile": "01005563956",
+    "city": "Menoufia",
+    "state": "Sadat City",
+    "street": "Kafr Dawood",
+    "favorites": [
+      3
+    ],
+    "inCart": [
+      2
+    ],
+    "password": "111111"
   }
 ]

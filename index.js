@@ -8,6 +8,9 @@ const categoriesPath = "./DB/categories.json";
 const productsPath = "./DB/products.json";
 const partnersPath = "./DB/partners.json";
 const cartsPath = "./DB/carts.json";
+const messagesPath = "./DB/messages.json";
+const topCategoriesPath = "./DB/topCategories.json";
+const offersPath = "./DB/offers.json";
 
 app.use(cors());
 app.use(express.json());
@@ -31,58 +34,96 @@ app.post("/api/signup", (req, res) => {
   const street = req.body.street;
   const password = req.body.password;
 
-  readFile(usersPath, "utf8", (error, data) => {
-    if (error) {
-      res.json({
-        error: true,
-        message: "An error occured, please try again!",
-      });
-      return;
-    }
+  setTimeout(() => {
+    readFile(usersPath, "utf8", (error, data) => {
+      if (error) {
+        res.json({
+          error: true,
+          message: "An error occured, please try again!",
+        });
+        return;
+      }
 
-    const users = JSON.parse(data);
-    const userByEmail = users.find((user) => user.email === email);
-    const userByUsername = users.find((user) => user.username === username);
+      const users = JSON.parse(data);
+      const userByEmail = users.find((user) => user.email === email);
+      const userByUsername = users.find((user) => user.username === username);
 
-    if (userByEmail) {
-      res.json({
-        error: true,
-        errorType: "emailExists",
-      });
-    } else if (userByUsername) {
-      res.json({
-        error: true,
-        errorType: "usernameExists",
-      });
-    } else {
-      const newUser = {
-        firstName,
-        lastName,
-        username,
-        email,
-        mobile,
-        city,
-        state,
-        street,
-        favorites: [],
-        password,
-      };
-      users.push(newUser);
+      if (userByEmail) {
+        res.json({
+          error: true,
+          errorType: "emailExists",
+        });
+      } else if (userByUsername) {
+        res.json({
+          error: true,
+          errorType: "usernameExists",
+        });
+      } else {
+        const newUser = {
+          firstName,
+          lastName,
+          username,
+          email,
+          mobile,
+          city,
+          state,
+          street,
+          favorites: [],
+          inCart: [],
+          password,
+        };
+        users.push(newUser);
 
-      writeFile(usersPath, JSON.stringify(users, null, 2), (err) => {
-        if (err) {
-          res.json({
-            error: true,
-            message: "An error occured, please try again!",
+        writeFile(usersPath, JSON.stringify(users, null, 2), (err) => {
+          if (err) {
+            setTimeout(() => {
+              res.json({
+                error: true,
+                message: "An error occured, please try again!",
+              });
+            }, 1000);
+            return;
+          }
+        });
+
+        // Add cart of new user
+        readFile(cartsPath, "utf8", (error, cartsData) => {
+          if (error) {
+            res.json({
+              error: true,
+              message: "An error occured, please try again!",
+            });
+            return;
+          }
+
+          const carts = JSON.parse(cartsData);
+          const newCart = {
+            username,
+            items: [],
+            shipping: 10,
+            totalPrice: 0,
+          };
+
+          carts.push(newCart);
+          writeFile(cartsPath, JSON.stringify(carts, null, 2), (err) => {
+            if (err) {
+              setTimeout(() => {
+                res.json({
+                  error: true,
+                  message: "An error occured, please try again!",
+                });
+              }, 1000);
+              return;
+            }
+
+            delete newUser.password;
+            const token = createToken(newUser);
+            res.json({ user: newUser, token });
           });
-          return;
-        }
-        delete newUser.password;
-        const token = createToken(newUser);
-        res.json({ user: newUser, token });
-      });
-    }
-  });
+        });
+      }
+    });
+  }, 1000);
 });
 
 // Edit Profile
@@ -200,28 +241,38 @@ app.post("/api/Signin", (req, res) => {
     }
 
     const users = JSON.parse(data);
-    const user = users.find((user) => user.email === email);
+    const user = users.find(
+      (user) => user.email === email || user.username === email
+    );
 
     if (!email || !password) {
-      return res.json({
-        error: true,
-        errorType: "missingCredentials",
-      });
-    } else if (!user) {
-      return res.json({
-        error: true,
-        errorType: "userNotFound",
-      });
-    } else {
-      if (password !== user.password) {
+      setTimeout(() => {
         return res.json({
           error: true,
-          errorType: "incorrectPassword",
+          errorType: "missingCredentials",
         });
+      }, 1000);
+    } else if (!user) {
+      setTimeout(() => {
+        return res.json({
+          error: true,
+          errorType: "userNotFound",
+        });
+      }, 1000);
+    } else {
+      if (password !== user.password) {
+        setTimeout(() => {
+          return res.json({
+            error: true,
+            errorType: "incorrectPassword",
+          });
+        }, 1000);
       } else {
         delete user.password;
         const token = createToken(user);
-        res.json({ user, token });
+        setTimeout(() => {
+          res.json({ user, token });
+        }, 1000);
       }
     }
   });
@@ -267,7 +318,67 @@ app.get("/api/categories", (req, res) => {
     }
 
     const categories = JSON.parse(data);
-    res.json(categories);
+
+    readFile(productsPath, "utf8", (error, data) => {
+      if (error) {
+        res.json({
+          error: true,
+          message: "An error ocured, please try again!",
+        });
+        return;
+      }
+
+      const products = JSON.parse(data);
+
+      const result = categories.map((category) => {
+        category.quantity = products.filter(
+          (product) => product.category === category.category
+        ).length;
+        return category;
+      });
+
+      setTimeout(() => {
+        res.json(result);
+      }, 1000);
+    });
+  });
+});
+
+// Get top categories
+app.get("/api/top_categories", (req, res) => {
+  readFile(topCategoriesPath, "utf8", (error, data) => {
+    if (error) {
+      res.json({
+        error: true,
+        message: "An error ocured, please try again!",
+      });
+      return;
+    }
+
+    const categories = JSON.parse(data);
+
+    setTimeout(() => {
+      res.json(categories);
+    }, 1000);
+  });
+});
+
+// Get offers
+app.get("/api/offers", (req, res) => {
+  readFile(offersPath, "utf8", (error, data) => {
+    if (error) {
+      res.json({
+        error: true,
+        message: "An error ocured, please try again!",
+      });
+      return;
+    }
+
+    const offers = JSON.parse(data);
+
+    setTimeout(() => {
+      res.json(offers);
+    }, 700);
   });
 });
 
@@ -301,15 +412,18 @@ app.get("/api/category/:category", (req, res) => {
     }
 
     const products = JSON.parse(data);
-    const category_products = products.filter(
+
+    const category_products = products.find(
       (product) => product.category === category
     );
 
-    if (category_products.length > 0) {
+    if (category_products) {
       res.json(category_products);
     } else {
-      const msg = `Can not find category named '${category}'`;
-      res.json(msg);
+      res.json({
+        error: true,
+        errorType: "invalidCategory",
+      });
     }
   });
 });
@@ -339,11 +453,24 @@ app.get("/api/search/:query", (req, res) => {
 app.get("/api/search/", (req, res) => {
   const query = req.query.query?.toLowerCase();
   const category = req.query.category?.toLowerCase() || "all";
-  const minPrice = req.query.minPrice?.toLowerCase();
-  const maxPrice = req.query.maxPrice?.toLowerCase();
+  const minPrice = req.query.minprice?.toLowerCase();
+  const maxPrice = req.query.maxprice?.toLowerCase();
   const rate = req.query.rate?.toLowerCase() || "all";
   const limit = req.query.limit?.toLowerCase() || "10";
-  const sort = req.query.sort?.toLowerCase();
+  const sort = req.query.sort?.toLowerCase() || "random";
+
+  const categories = JSON.parse(
+    readFileSync(categoriesPath, (error, data) => {
+      if (error) {
+        const msg = "An error occured, please try again!";
+        return msg;
+      }
+
+      const categories = JSON.parse(data);
+
+      return categories;
+    })
+  );
 
   readFile(productsPath, "utf8", (error, data) => {
     if (error) {
@@ -359,7 +486,11 @@ app.get("/api/search/", (req, res) => {
     let limitedList = [];
 
     result = query
-      ? result.filter((product) => product.title.toLowerCase().includes(query))
+      ? result.filter(
+          (product) =>
+            product.title.toLowerCase().includes(query) ||
+            product.titleAR.toLowerCase().includes(query)
+        )
       : result;
 
     result =
@@ -379,7 +510,7 @@ app.get("/api/search/", (req, res) => {
 
     result =
       rate && rate !== "all"
-        ? result.filter((product) => product.rating.rate >= rate)
+        ? result.filter((product) => Math.round(product.rating.rate) == rate)
         : result;
 
     result =
@@ -391,7 +522,13 @@ app.get("/api/search/", (req, res) => {
 
     limitedList = limit ? result.slice(0, limit) : result;
 
+    // Check if the entered category is valid
+    const validCategory = categories.find((item) => item.category === category)
+      ? true
+      : false;
+
     const response = {
+      error: !validCategory,
       query,
       category,
       limit,
@@ -402,51 +539,71 @@ app.get("/api/search/", (req, res) => {
       productsCount: result.length,
       products: limitedList,
     };
-    res.json(response);
+    setTimeout(() => {
+      res.json(response);
+    }, 1000);
   });
 });
 
 // Review product
 app.patch("/api/products", (req, res) => {
-  const { product_id } = req.body;
-  const { user_review } = req.body;
+  const { id, rate, comment, date, name } = req.body;
+  const username = req.body.username?.toLowerCase();
 
-  readFile(productsPath, "utf8", (error, data) => {
-    if (error) {
-      res.json({
-        error: true,
-        message: "Failed to send review, please try again!",
-      });
-      return;
-    }
-
-    const products = JSON.parse(data);
-    const product = products.find((product) => product.id === product_id);
-    const prevRate = product.rating.rate;
-    const prevCount = product.rating.count;
-    const prevComments = product.rating.comments;
-    const newRate = {
-      rate: (prevRate * prevCount + user_review.rate) / (prevCount + 1),
-      count: prevCount + 1,
-      comments: [...prevComments, user_review],
-    };
-
-    // updating rate
-    product.rating = newRate;
-
-    writeFile(productsPath, JSON.stringify(products, null, 2), (err) => {
-      if (err) {
-        res.status(400).json("Failed to send review, please try again!");
+  setTimeout(() => {
+    readFile(productsPath, "utf8", (error, data) => {
+      if (error) {
+        res.json({
+          error: true,
+          message: "Failed to send review, please try again!",
+        });
         return;
       }
-      res.json("Your review sent successfully.");
+
+      const products = JSON.parse(data);
+      const product = products.find((product) => product.id === id);
+      const prevRate = product.rating.rate;
+      const prevCount = product.rating.count;
+      const prevComments = product.rating.comments;
+      const user_review = {
+        id,
+        name,
+        username,
+        date,
+        rate,
+        comment,
+      };
+      const newRate = {
+        rate: (prevRate * prevCount + user_review.rate) / (prevCount + 1),
+        count: prevCount + 1,
+        comments: [...prevComments, user_review],
+      };
+
+      // updating rate
+      product.rating = newRate;
+
+      writeFile(productsPath, JSON.stringify(products, null, 2), (err) => {
+        if (error) {
+          res.json({
+            error: true,
+            message:
+              "An error occured while send your review, please try again!",
+          });
+          return;
+        }
+        const response = {
+          error: false,
+          product,
+        };
+        res.json(response);
+      });
     });
-  });
+  }, 1000);
 });
 
 // Product details
-app.get("/api/products/:id", (req, res) => {
-  const product_id = req.params.id;
+app.get("/api/product/:id", (req, res) => {
+  const { id } = req.params;
 
   readFile(productsPath, "utf8", (error, data) => {
     if (error) {
@@ -458,11 +615,55 @@ app.get("/api/products/:id", (req, res) => {
     }
 
     const products = JSON.parse(data);
-    const product = products.find((product) => product.id == product_id);
+    const product = products.find((product) => product.id == id);
 
-    product
-      ? res.json(product)
-      : res.status(404).json(`No product found with id '${product_id}'!`);
+    if (product != undefined) {
+      const response = {
+        error: false,
+        product,
+      };
+      setTimeout(() => {
+        res.json(response);
+      }, 1000);
+    } else {
+      const response = {
+        error: true,
+        errorType: "invalidID",
+        product,
+      };
+      setTimeout(() => {
+        res.json(response);
+      }, 1000);
+    }
+  });
+});
+
+// Similar products
+app.post("/api/product/similar", (req, res) => {
+  const { id } = req.body;
+
+  readFile(productsPath, "utf8", (error, data) => {
+    if (error) {
+      res.json({
+        error: true,
+        message: "An error ocured, please try again!",
+      });
+      return;
+    }
+
+    const products = JSON.parse(data);
+    const category = products.find((product) => product.id == id)?.category;
+    const similar = products.filter(
+      (product) => product.category == category && product.id != id
+    );
+
+    const response = {
+      error: false,
+      products: similar,
+    };
+    setTimeout(() => {
+      res.json(response);
+    }, 1000);
   });
 });
 
@@ -474,11 +675,12 @@ app.get("/api/partners", (req, res) => {
         error: true,
         message: "An error ocured, please try again!",
       });
-      return msg;
     }
 
     const partners = JSON.parse(data);
-    res.json(partners);
+    setTimeout(() => {
+      res.json(partners);
+    }, 1000);
   });
 });
 
@@ -531,28 +733,35 @@ app.get("/api/cart/:username", (req, res) => {
     const product = products.find((product) => product.id === item.id);
     const { quantity } = item;
     const { price } = item;
-    return { product, quantity, price };
+    const { size } = item;
+    const cartItemColor = item.color;
+    const color = product.colors?.find((color) => color.id === cartItemColor);
+    return { product, quantity, price, size, color };
   });
 
   const { shipping } = cart;
-  const { totalPrice } = cart;
+  const totalPrice = cart.totalPrice + shipping;
   const user = users.find((user) => user.username === username);
   delete user.password;
 
-  res.json({ user, shipping, totalPrice, cartProducts });
+  setTimeout(() => {
+    res.json({ user, shipping, totalPrice, cartProducts });
+  }, 1000);
 });
 
-// Edit user's cart
+// Edit user's cart >> Add / Delete / Update
 app.patch("/api/cart/:username", (req, res) => {
   const username = req.body.username?.toLowerCase();
   const { id, quantity } = req.body;
+  const size = req.body.size?.toUpperCase();
+  const color = req.body.color;
   const message = "An error occured, please try again!";
 
   const products = JSON.parse(
     readFileSync(productsPath, (error, data) => {
       if (error) {
-        const msg = "An error occured, please try again!";
-        return msg;
+        res.json({ error: true, message });
+        return;
       }
 
       const products = JSON.parse(data);
@@ -578,20 +787,110 @@ app.patch("/api/cart/:username", (req, res) => {
         id,
         quantity,
         price: productPrice,
+        size,
+        color,
       };
 
-      userCart.items.push({
-        id,
-        quantity,
-        price: productPrice,
-      });
+      userCart.items.push(cartProduct);
     }
 
-    cartProduct.quantity = quantity;
-    cartProduct.price = productPrice;
+    if (size && color) {
+      cartProduct = userCart.items.find(
+        (item) =>
+          item.id === id &&
+          item.color === color &&
+          item.size?.toLowerCase() === size?.toLowerCase()
+      );
+      if (quantity === 0) {
+        if (size?.toLowerCase() == "all" && color?.toLowerCase() == "all") {
+          userCart.items = userCart.items.filter((item) => item.id !== id);
+        } else {
+          userCart.items = userCart.items.filter(
+            (item) => item !== cartProduct
+          );
+        }
+      } else {
+        if (cartProduct?.size == size && cartProduct?.color == color) {
+          cartProduct.quantity = quantity;
+          cartProduct.price = productPrice;
+        } else {
+          cartProduct = {
+            id,
+            quantity,
+            price: productPrice,
+            size,
+            color,
+          };
 
-    if (quantity === 0) {
-      userCart.items = userCart.items.filter((item) => item.id !== id);
+          userCart.items.push(cartProduct);
+        }
+      }
+    }
+
+    if (size && !color) {
+      cartProduct = userCart.items.find(
+        (item) =>
+          item.id === id &&
+          item.size?.toLowerCase() === size?.toLowerCase() &&
+          item.color == undefined
+      );
+      if (quantity === 0) {
+        userCart.items = userCart.items.filter((item) => item !== cartProduct);
+      } else {
+        if (cartProduct?.size == size) {
+          cartProduct.quantity = quantity;
+          cartProduct.price = productPrice;
+        } else {
+          cartProduct = {
+            id,
+            quantity,
+            price: productPrice,
+            size,
+            color,
+          };
+
+          userCart.items.push(cartProduct);
+        }
+      }
+    }
+
+    if (!size && color) {
+      cartProduct = userCart.items.find(
+        (item) =>
+          item.id === id && item.color === color && item.size === undefined
+      );
+      if (quantity === 0) {
+        userCart.items = userCart.items.filter((item) => item !== cartProduct);
+      } else {
+        if (cartProduct?.color == color) {
+          cartProduct.quantity = quantity;
+          cartProduct.price = productPrice;
+        } else {
+          cartProduct = {
+            id,
+            quantity,
+            price: productPrice,
+            size,
+            color,
+          };
+
+          userCart.items.push(cartProduct);
+        }
+      }
+    }
+
+    if (!size && !color) {
+      console.log("!size && !color");
+      cartProduct = userCart.items.find(
+        (item) =>
+          item.id === id && item.color === undefined && item.size === undefined
+      );
+      if (quantity === 0) {
+        userCart.items = userCart.items.filter((item) => item !== cartProduct);
+      } else {
+        cartProduct.quantity = quantity;
+        cartProduct.price = productPrice;
+      }
     }
 
     let finalPrice = 0;
@@ -605,7 +904,10 @@ app.patch("/api/cart/:username", (req, res) => {
       const product = products.find((product) => product.id === item.id);
       const { quantity } = item;
       const { price } = product;
-      return { product, quantity, price };
+      const { size } = item;
+      const cartItemColor = item.color;
+      const color = product.colors?.find((color) => color.id === cartItemColor);
+      return { product, quantity, price, size, color };
     });
 
     const { shipping } = userCart;
@@ -640,43 +942,6 @@ app.patch("/api/cart/:username", (req, res) => {
         delete user.password;
         res.json({ user, shipping, totalPrice, cartProducts });
       });
-    });
-  });
-});
-
-// Add product to cart
-app.post("/api/cart/:username", (req, res) => {
-  const username = req.params.username?.toLowerCase();
-  const { id, quantity, price } = req.body;
-
-  readFile(cartsPath, "utf8", (error, data) => {
-    if (error) {
-      const msg = "An error occured, please try again!";
-      return msg;
-    }
-
-    const carts = JSON.parse(data);
-    const userCart = carts.find((cart) => cart.username === username);
-
-    userCart.items.push({
-      id,
-      quantity,
-      price,
-    });
-
-    let totalPrice = 0;
-    for (var i = 0; i < userCart.items.length; i++) {
-      totalPrice += userCart.items[i].price * userCart.items[i].quantity;
-
-      userCart.totalPrice = totalPrice;
-    }
-
-    writeFile(cartsPath, JSON.stringify(carts, null, 2), (err) => {
-      if (err) {
-        res.status(400).json("Failed to update cart, please try again!");
-        return;
-      }
-      res.json("Cart updated successfully.");
     });
   });
 });
@@ -719,7 +984,9 @@ app.get("/api/favorites/:username", (req, res) => {
 
   const user = users.find((user) => user.username === username);
 
-  res.json({ user, favorites });
+  setTimeout(() => {
+    res.json({ user, favorites });
+  }, 1000);
 });
 
 // Add product to favorites
@@ -787,7 +1054,7 @@ app.post("/api/favorites/add", (req, res) => {
   });
 });
 
-// Remove product to favorites
+// Remove product from favorites
 app.post("/api/favorites/delete", (req, res) => {
   const username = req.body.username?.toLowerCase();
   const { id } = req.body;
@@ -843,6 +1110,39 @@ app.post("/api/favorites/delete", (req, res) => {
         message: "Username not exists!",
       });
     }
+  });
+});
+
+// User message / Contact us page
+app.post("/api/contact", (req, res) => {
+  const message = req.body;
+
+  readFile(messagesPath, "utf8", (error, data) => {
+    if (error) {
+      res.json({
+        error: true,
+        message: "An error occured, please try again!",
+      });
+      return;
+    }
+
+    const messages = JSON.parse(data);
+    messages.push(message);
+    setTimeout(() => {
+      writeFile(messagesPath, JSON.stringify(messages, null, 2), (err) => {
+        if (err) {
+          res.json({
+            error: true,
+            message: "An error occured, please try again!",
+          });
+          return;
+        }
+        res.json({
+          messageEN: "We Got Your Message, Thanks For Choosing MAWGOOD !",
+          messageAR: "لقت تلقينا رسالتك، شكراً لإختيارك  موجود!",
+        });
+      });
+    }, 1000);
   });
 });
 

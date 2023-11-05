@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titleEN": "Special Offer",
+    "titleAR": "عرض خاص",
+    "cover": "https://i.postimg.cc/tTQy7snc/offer-1.jpg",
+    "descriptionEN": "Save 20%",
+    "descriptionAR": "خصم 20%",
+    "path": "/category/men_fashion"
+  },
+  {
+    "id": 2,
+    "titleEN": "Limited Time Offer",
+    "titleAR": "عرض لفترة محدودة",
+    "cover": "https://i.postimg.cc/tgVpX3JP/offer-2.jpg",
+    "descriptionEN": "Save 30%",
+    "descriptionAR": "خصم 30%",
+    "path": "/category/women_fashion"
+  }
+]

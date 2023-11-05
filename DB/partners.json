@@ -1,37 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Partner 1",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "Vodafone",
+    "cover": "https://i.postimg.cc/fLwL15Fs/1.png"
   },
   {
     "id": 2,
-    "name": "Partner 2",
-    "cover": "https://i.postimg.cc/jqWz90LV/2.png"
+    "name": "NBE",
+    "cover": "https://i.postimg.cc/Y00SC0My/2.png"
   },
   {
     "id": 3,
-    "name": "Partner 3",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "CIB",
+    "cover": "https://i.postimg.cc/DyDSmrWQ/3.png"
   },
   {
     "id": 4,
-    "name": "Partner 4",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "LG",
+    "cover": "https://i.postimg.cc/MGJXmzmv/4.png"
   },
   {
     "id": 5,
-    "name": "Partner 5",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "Samsung",
+    "cover": "https://i.postimg.cc/ZqL399zT/5.png"
   },
   {
     "id": 6,
-    "name": "Partner 6",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "DELL",
+    "cover": "https://i.postimg.cc/50n0JLdC/6.png"
   },
   {
     "id": 7,
-    "name": "Partner 7",
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "name": "Xiaomi",
+    "cover": "https://i.postimg.cc/wT3t6fBT/7.png"
+  },
+  {
+    "id": 8,
+    "name": "Apple",
+    "cover": "https://i.postimg.cc/vZVcn49J/8.png"
   }
 ]

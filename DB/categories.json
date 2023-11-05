@@ -4,15 +4,107 @@
     "name": "Smartphones",
     "nameAR": "موبايلات",
     "category": "smartphones",
-    "quantity": 90,
-    "cover": "https://i.postimg.cc/WtLpYJt4/1.png"
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/pV9WP0NC/smartphones.png",
+    "path": "/category/smartphones"
   },
   {
     "id": 2,
     "name": "Laptops",
     "nameAR": "لاب توب",
     "category": "laptops",
-    "quantity": 38,
-    "cover": "https://i.postimg.cc/jqWz90LV/2.png"
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/nLCFMTjn/laptops.png",
+    "path": "/category/laptops"
+  },
+  {
+    "id": 3,
+    "name": "Men's Fashion",
+    "nameAR": "أزياء رجالي",
+    "category": "men_fashion",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/cLLF7M8n/men-fashion.png",
+    "path": "/category/men_fashion"
+  },
+  {
+    "id": 4,
+    "name": "Women's Fashion",
+    "nameAR": "أزياء حريمي",
+    "category": "women_fashion",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/mhfGzprC/women-fashion.png",
+    "path": "/category/women_fashion"
+  },
+  {
+    "id": 5,
+    "name": "Kids' Clothing",
+    "nameAR": "أزياء الأطفال",
+    "category": "kids_clothing",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/sDQXMbTQ/kids-clothing.png",
+    "path": "/category/kids_clothing"
+  },
+  {
+    "id": 6,
+    "name": "Beauty & Health",
+    "nameAR": "الصحة والجمال",
+    "category": "beauty_and_health",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/ZqT4xQxL/beauty-and-health.png",
+    "path": "/category/beauty_and_health"
+  },
+  {
+    "id": 7,
+    "name": "Footwear",
+    "nameAR": "أحذية",
+    "category": "footwear",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/kXbJJK5W/footwear.png",
+    "path": "/category/footwear"
+  },
+  {
+    "id": 8,
+    "name": "Televisions",
+    "nameAR": "تلفزيونات",
+    "category": "televisions",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/43BZL18R/televisions.png",
+    "path": "/category/televisions"
+  },
+  {
+    "id": 9,
+    "name": "Headphones",
+    "nameAR": "سماعات",
+    "category": "headphones",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/wMkkL7q2/headphones.png",
+    "path": "/category/headphones"
+  },
+  {
+    "id": 10,
+    "name": "Watches",
+    "nameAR": "ساعات",
+    "category": "watches",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/2SNzVyqM/watches.png",
+    "path": "/category/watches"
+  },
+  {
+    "id": 11,
+    "name": "Cameras",
+    "nameAR": "كاميرات",
+    "category": "cameras",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/B6z3sn9h/cameras.png",
+    "path": "/category/cameras"
+  },
+  {
+    "id": 12,
+    "name": "Home & Kitchen",
+    "nameAR": "البيت والمطبخ",
+    "category": "home_and_kitchen",
+    "quantity": 0,
+    "cover": "https://i.postimg.cc/1t7mtK6r/home-and-kitchen.png",
+    "path": "/category/home_and_kitchen"
   }
 ]

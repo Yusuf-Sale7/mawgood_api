@@ -1,175 +1,973 @@
 [
   {
     "id": 1,
-    "title": "iPhone 9",
-    "description": "An apple mobile which is nothing like apple",
-    "brand": "Apple",
+    "title": "Galaxy S23 Ultra 5G",
+    "titleAR": "جالاكسي S23 ألترا 5G",
+    "description": "Galaxy S23 Ultra 5G Dual SIM Phantom Black 12GB RAM 256GB - Middle East Version.",
+    "descriptionAR": "هاتف جالاكسي S23 ألترا 5G ثنائي الشريحة بلون أسود فانتوم سعة 12 جيجابايت وذاكرة وصول عشوائي سعة 256 جيجابايت - إصدار الشرق الأوسط",
+    "fullDescription": "The use of conscious materials makes this our most eco-friendly smartphone ever. Recycled glass and PET film accent the phone's exterior, and box made from recycled paper makes it planet-loving from the moment it hits your hands. S Pen keeps the legacy of Note alive. Plus, it helps you ditch the dependency on notebooks, making sketches and memos effortless and eco-friendly Take crisp photos and videos, from dusk until dawn. Galaxy's most advanced camera sensor and fastest processor accommodate low light and reduce noise. And even the camera lens clears up the capture by toning down flare We nearly doubled the resolution on the Wide-angle Camera, to deliver a clarity never before seen on Galaxy002E Zoom and crop for a whole new shot without hitting the shutter — or leave it intact for brilliant detail, corner to corner Maximize your free time with the most powerful chip on a Galaxy smartphone. Improved features across the board means everything from gaming to streaming is optimized and seamless — without draining the battery",
+    "fullDescriptionAR": "استخدام المواد الواعية يجعل هذا الهاتف الذكي الأكثر صداقة للبيئة لدينا على الإطلاق. الزجاج المعاد تدويره وفيلم البولي إيثيلين تيرفثالات لهجة الشكل الخارجي للهاتف ، والصندوق المصنوع من الورق المعاد تدويره يجعله محبًا للكواكب من اللحظة التي يصطدم فيها بيديك. يحافظ قلم S Pen على الإرث من Note على قيد الحياة. بالإضافة إلى ذلك ، يساعدك على التخلص من الاعتماد على أجهزة الكمبيوتر المحمولة ، مما يجعل الرسومات والمذكرات سهلة وصديقة للبيئة ، التقط صورًا ومقاطع فيديو واضحة ، من الغسق حتى الفجر. يستوعب مستشعر الكاميرا الأكثر تقدمًا والمعالج الأسرع من Galaxy الإضاءة المنخفضة ويقلل من الضوضاء. وحتى عدسة الكاميرا تقوم بمسح الالتقاط عن طريق تخفيف التوهج لقد ضاعفنا الدقة تقريبًا على الكاميرا ذات الزاوية العريضة ، لتوفير وضوح لم يسبق له مثيل في Galaxy002E Zoom والقص للحصول على لقطة جديدة تمامًا دون الضغط على الغالق - أو تركه سليمة للحصول على تفاصيل رائعة ، من الزاوية إلى الزاوية قم بزيادة وقت فراغك إلى أقصى حد باستخدام أقوى شريحة في هاتف ذكي من Galaxy. وتعني الميزات المحسنة عبر اللوحة أن كل شيء بدءًا من الألعاب وحتى البث محسّنًا وسلسًا - دون استنزاف البطارية.",
+    "additionalInfo": [
+      {
+        "title": "Expandable Memory Type",
+        "info": "No Expandable Memory",
+        "titleAR": "نوع الذاكرة القابلة للزيادة",
+        "infoAR": "بدون ذاكرة قابلة للزيادة"
+      },
+      {
+        "title": "Secondary Camera Resolution",
+        "info": "12 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "12 MP"
+      },
+      {
+        "title": "Charging Type",
+        "info": "Type-C",
+        "titleAR": "نوع الشحن",
+        "infoAR": "نوع C"
+      },
+      {
+        "title": "SIM Type",
+        "info": "Nano SIM",
+        "titleAR": "نوع الشريحة",
+        "infoAR": "بطاقة SIM نانو"
+      },
+      {
+        "title": "SIM Count",
+        "info": "Dual SIM",
+        "titleAR": "عدد شريحة Sim",
+        "infoAR": "مزدوج الشريحة"
+      },
+      {
+        "title": "Operating System",
+        "info": "Android",
+        "titleAR": "نظام التشغيل",
+        "infoAR": "أندرويد"
+      },
+      {
+        "title": "Secondary Camera",
+        "info": "12 - 15.9 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "12 - 15.9 ميجابكسل"
+      },
+      {
+        "title": "RAM Size",
+        "info": "12 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "12 GB"
+      },
+      {
+        "title": "Battery Size",
+        "info": "5000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "5000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "256 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "256 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "Dynamic AMOLED",
+        "titleAR": "نوع العرض",
+        "infoAR": "ديناميك أموليد"
+      },
+      {
+        "title": "Screen Size",
+        "info": "6.8 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "6.8 In"
+      },
+      {
+        "title": "Primary Camera Resolution",
+        "info": "200 MP",
+        "titleAR": "دقة الكاميرا الأساسية",
+        "infoAR": "200 MP"
+      }
+    ],
+    "brand": "Samsung",
+    "brandAR": "سامسونج",
     "category": "smartphones",
-    "price": 549,
-    "prevPrice": 599,
+    "price": 33999,
+    "prevPrice": 35999,
     "rating": {
-      "rate": 4.6,
-      "count": 5,
+      "rate": 5,
+      "count": 1,
       "comments": [
         {
-          "username": "Yusuf Saleh",
-          "date": "22/2/2023",
-          "rate": 4,
-          "comment": "nice"
-        },
-        {
-          "username": "Joe",
-          "date": "22/2/2023",
-          "rate": 4,
-          "comment": "good"
-        },
-        {
-          "username": "Hi",
-          "date": "22/2/2023",
+          "id": 1,
+          "name": "Yusuf Saleh",
+          "username": "yusuf_sale7",
+          "date": "06/09/2023",
           "rate": 5,
-          "comment": "nice"
-        },
-        {
-          "username": "New User",
-          "date": "30/4/2023",
-          "rate": 5,
-          "comment": "Good product"
-        },
-        {
-          "username": "New User",
-          "date": "30/4/2023",
-          "rate": 5,
-          "comment": "Good product"
+          "comment": "Excellent phone with many features"
         }
       ]
     },
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L"
-    ],
     "colors": [
-      "Black",
-      "White",
-      "Red",
-      "Blue"
-    ],
-    "fullDescription": {
-      "info": "Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.\n\nDolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.",
-      "additionalInfo": {
-        "lanel1": "Details",
-        "lanel2": "Details",
-        "lanel3": "Details",
-        "lanel4": "Details",
-        "lanel5": "Details"
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      },
+      {
+        "id": 2,
+        "name": "White",
+        "nameAR": "أبيض"
+      },
+      {
+        "id": 3,
+        "name": "Green",
+        "nameAR": "أخضر"
       }
-    },
-    "thumbnail": "https://i.postimg.cc/3N6NJS5b/5.jpg",
+    ],
+    "thumbnail": "https://i.postimg.cc/pTxHSBhN/p1i1.png",
     "images": [
-      "https://i.dummyjson.com/data/products/1/1.jpg",
-      "https://i.dummyjson.com/data/products/1/2.jpg",
-      "https://i.dummyjson.com/data/products/1/3.jpg",
-      "https://i.dummyjson.com/data/products/1/4.jpg",
-      "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      "https://i.postimg.cc/pTxHSBhN/p1i1.png",
+      "https://i.postimg.cc/7htrf8BD/p1i2.png",
+      "https://i.postimg.cc/L58M963N/p1i3.png"
     ]
   },
   {
     "id": 2,
-    "title": "iPhone X",
-    "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-    "brand": "Apple",
-    "category": "smartphones",
-    "price": 899,
-    "prevPrice": 999,
-    "rating": {
-      "rate": 5,
-      "count": 38,
-      "comments": [
-        {
-          "username": "Joe",
-          "date": "22/2/2023",
-          "rate": 5
-        }
-      ]
-    },
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L"
-    ],
-    "colors": [
-      "Black",
-      "White",
-      "Red",
-      "Blue"
-    ],
-    "fullDescription": {
-      "info": "Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.\n\nDolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.",
-      "additionalInfo": {
-        "lanel1": "Details",
-        "lanel2": "Details",
-        "lanel3": "Details",
-        "lanel4": "Details",
-        "lanel5": "Details"
+    "title": "iPhone 14 Pro Max",
+    "titleAR": "آيفون 14 برو ماكس",
+    "description": "iPhone 14 Pro Max 256GB Deep Purple 5G With FaceTime - Middle East Version",
+    "descriptionAR": "هاتف آيفون 14 برو ماكس بذاكرة داخلية 256 جيجابايت وبتقنية 5G مع تطبيق فيس تايم بلون ليلكي عميق - إصدار الشرق الأوسط",
+    "fullDescription": "The iPhone 14 Pro models are much more feature rich than the iPhone 14 models, offering camera technology improvements, better display capabilities, a faster A16 chip, and more. The 6.7 iPhone 14 Pro models features flat edges, stainless steel enclosure, a textured matte glass back, IP68 water resistance, and a Ceramic Shield-protected display. The 48-megapixel lens also enables a 2x Telephoto mode that uses the middle 12 megapixels for full-resolution photos with no digital zoom. This joins the existing 3x zoom enabled by the dedicated Telephoto lens, which has also been improved. The iPhone 14 Pro models support 5G connectivity and uses a new Qualcomm X65 modem",
+    "fullDescriptionAR": "تتميز طرازات iPhone 14 Pro بميزات أكثر ثراءً من طرازات iPhone 14 ، حيث تقدم تحسينات في تكنولوجيا الكاميرا ، وقدرات عرض أفضل ، وشريحة A16 أسرع ، وأكثر من ذلك. تتميز طرازات iPhone 14 Pro 6.7 بحواف مسطحة ، وغطاء من الفولاذ المقاوم للصدأ ، ونسيج محكم ظهر زجاجي غير لامع ومقاومة للماء IP68 وشاشة محمية من السيراميك Shield. تتيح العدسة بدقة 48 ميجابكسل أيضًا وضع Telephoto 2x الذي يستخدم متوسط 12 ميجابكسل للحصول على صور كاملة الدقة بدون تقريب رقمي. من خلال عدسة Telephoto المخصصة ، والتي تم تحسينها أيضًا. تدعم طرازات iPhone 14 Pro اتصال 5G وتستخدم مودم Qualcomm X65 جديدًا ",
+    "additionalInfo": [
+      {
+        "title": "Expandable Memory Type",
+        "info": "No Expandable Memory",
+        "titleAR": "نوع الذاكرة القابلة للزيادة",
+        "infoAR": "بدون ذاكرة قابلة للزيادة"
+      },
+      {
+        "title": "Secondary Camera Resolution",
+        "info": "12 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "12 MP"
+      },
+      {
+        "title": "Charging Type",
+        "info": "Lightning Port",
+        "titleAR": "نوع الشحن",
+        "infoAR": "منفذ كابل Lightning"
+      },
+      {
+        "title": "SIM Type",
+        "info": "Nano + ESIM",
+        "titleAR": "نوع الشريحة",
+        "infoAR": "شريحة نانو + شريحة إلكترونية"
+      },
+      {
+        "title": "SIM Count",
+        "info": "Dual SIM",
+        "titleAR": "عدد شريحة Sim",
+        "infoAR": "مزدوج الشريحة"
+      },
+      {
+        "title": "Operating System",
+        "info": "IOS",
+        "titleAR": "نظام التشغيل",
+        "infoAR": "IOS"
+      },
+      {
+        "title": "Secondary Camera",
+        "info": "12 - 15.9 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "12 - 15.9 ميجابكسل"
+      },
+      {
+        "title": "RAM Size",
+        "info": "6 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "6 GB"
+      },
+      {
+        "title": "Battery Size",
+        "info": "4323 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "4323 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "256 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "256 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "Dynamic AMOLED",
+        "titleAR": "نوع العرض",
+        "infoAR": "ديناميك أموليد"
+      },
+      {
+        "title": "Screen Size",
+        "info": "6.7 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "6.7 بوصة"
+      },
+      {
+        "title": "Primary Camera Resolution",
+        "info": "48+12+12 MP",
+        "titleAR": "دقة الكاميرا الأساسية",
+        "infoAR": "48+12+12 MP"
       }
+    ],
+    "brand": "Apple",
+    "brandAR": "أبل",
+    "category": "smartphones",
+    "price": 41999,
+    "prevPrice": 44999,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
     },
-    "thumbnail": "https://i.postimg.cc/5t7F0HkX/7.jpg",
+    "colors": [
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      },
+      {
+        "id": 2,
+        "name": "Silver",
+        "nameAR": "فضي"
+      },
+      {
+        "id": 3,
+        "name": "Gold",
+        "nameAR": "ذهبي"
+      },
+      {
+        "id": 4,
+        "name": "Deep Purple",
+        "nameAR": "ليلكي عميق"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/28hqBT4h/p2i1.png",
     "images": [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
-      "https://i.dummyjson.com/data/products/2/2.jpg",
-      "https://i.dummyjson.com/data/products/2/3.jpg",
-      "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      "https://i.postimg.cc/28hqBT4h/p2i1.png",
+      "https://i.postimg.cc/rw9KfmZp/p2i2.png",
+      "https://i.postimg.cc/fRsV7XKF/p2i3.png"
     ]
   },
   {
     "id": 3,
-    "title": "T-shirt",
-    "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-    "brand": "H&M",
-    "category": "clothes",
-    "price": 699,
-    "prevPrice": 799,
+    "title": "MSI Gf63 Thin 10Sc",
+    "titleAR": "إم اس آي Gf63 Thin 10Sc",
+    "description": "Laptop Gf63 Thin 10Sc With 15.6 Inch Fhd Display, Intel Core I7-10750H Processor / 8Gb Ram / 1Tb Hdd / 256Gb Ssd/Nvidia Geforce Gtx 1650 4Gb / Dos English/Arabic Black.",
+    "descriptionAR": "لابتوب Gf63 Thin 10Sc بشاشة بدقة كاملة الوضوح مقاس 15.6 بوصة ومعالج إنتل كور I7-10750H/ذاكرة رام سعة 8 جيجابايت/محرك أقراص صلبة HDD سعة 1 تيرابايت/محرك أقراص SSD سعة 256 جيجابايت/بطاقة رسومات إنفيديا جيفورس Gtx 1650 سعة 4 جيجابايت/نظام DOS الإنجليزية/العربية أسود",
+    "fullDescription": "Latest 10th Gen. Intel Core i7 processor powers up with up to 15% performance gains over the previous generation. Higher single core frequency is better for gaming experience. All juiced up for unplugged productivity and entertainment. MSI’s exclusive Dragon Center software helps you control and customize your MSI laptop the way you want. Monitor, adjust and optimize easily through one unified system. Developed under an exclusive partnership with BlueStacks, the MSI APP Player provides a seamless gaming experience between mobile gaming and the PC. It enables gamers to utilize customizable features such as RGB keyboard lighting, better graphics, and multi-tasking. Dreamed of a keyboard with intense lighting? Experience the SteelSeries silver-lining printing keyboard with intense red, that is also built to last. Immerse yourself in lossless music and enjoy the premium sound quality with Hi-Resolution Audio. Experience and listen to audio the way it was intended. Enjoy more immersive gameplay in an even more compact chassis. Get a clear view of the game at any angle with brilliant clarity and contrast with IPS-Level panel.",
+    "fullDescriptionAR": "يوفر أحدث معالج Intel Core i7 من الجيل العاشر ما يصل إلى 15% من مكاسب الأداء مقارنة بالجيل السابق. يعد التردد الأساسي الفردي الأعلى أفضل لتجربة الألعاب. كل ذلك مُجهز لتحقيق إنتاجية وترفيه غير متصلين. يساعدك برنامج Dragon Center الحصري من MSI على التحكم في الكمبيوتر المحمول MSI الخاص بك وتخصيصه بالطريقة التي تريدها. يمكنك المراقبة والضبط والتحسين بسهولة من خلال نظام واحد موحد. تم تطوير MSI APP Player بموجب شراكة حصرية مع BlueStacks، ويوفر تجربة لعب سلسة بين ألعاب الهاتف المحمول والكمبيوتر. فهو يمكّن اللاعبين من الاستفادة من الميزات القابلة للتخصيص مثل إضاءة لوحة المفاتيح RGB ورسومات أفضل وتعدد المهام. حلمت بلوحة مفاتيح ذات إضاءة شديدة؟ استمتع بتجربة لوحة المفاتيح المطبوعة ذات البطانة الفضية من SteelSeries باللون الأحمر الغامق، والتي تم تصميمها أيضًا لتدوم طويلاً. انغمس في الموسيقى التي لا تفقد البيانات واستمتع بجودة الصوت المتميزة مع الصوت عالي الدقة. تجربة والاستماع إلى الصوت بالطريقة المقصودة. استمتع بلعبة أكثر غامرة في هيكل أكثر إحكاما. احصل على رؤية واضحة للعبة من أي زاوية بوضوح وتباين رائعين مع لوحة IPS-Level.",
+    "additionalInfo": [
+      {
+        "title": "Operating System Version",
+        "info": "Free DOS",
+        "titleAR": "إصدار نظام التشغيل",
+        "infoAR": "فري دوس"
+      },
+      {
+        "title": "Display Resolution Type",
+        "info": "Full HD",
+        "titleAR": "نوع دقة العرض",
+        "infoAR": "Full HD"
+      },
+      {
+        "title": "Processor Speed",
+        "info": "2.6 GHz",
+        "titleAR": "نوع الشحن",
+        "infoAR": "2.6 GHz"
+      },
+      {
+        "title": "RAM Size",
+        "info": "8 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "8 GB"
+      },
+      {
+        "title": "Laptop Weight",
+        "info": "1.5 - 1.9 Kg",
+        "titleAR": "وزن اللابتوب",
+        "infoAR": "1.5 - 1.9 Kg"
+      },
+      {
+        "title": "Battery Size",
+        "info": "51000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "51000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "1.26 TB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "1.26 TB"
+      },
+      {
+        "title": "Display Type",
+        "info": "LED",
+        "titleAR": "نوع العرض",
+        "infoAR": "LED"
+      },
+      {
+        "title": "Graphics Memory Name",
+        "info": "Nvidia GeForce GTX Series",
+        "titleAR": "اسم ذاكرة الرسومات",
+        "infoAR": "بطاقة رسومات إنفيديا جي فورس من السلسلة GTX"
+      },
+      {
+        "title": "Screen Size",
+        "info": "15.6 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "15.6 In"
+      },
+      {
+        "title": "Display Resolution",
+        "info": "1920x1080",
+        "titleAR": "دقة الشاشة",
+        "infoAR": "1920x1080"
+      },
+      {
+        "title": "Processor Type",
+        "info": "Core I7",
+        "titleAR": "نوع المعالج",
+        "infoAR": "كور I7"
+      },
+      {
+        "title": "Processor Version Number/Generation",
+        "info": "10th Gen",
+        "titleAR": "رقم إصدار المعالج/الجيل",
+        "infoAR": "10th Gen"
+      },
+      {
+        "title": "Features",
+        "info": "Gaming, Bluetooth, Travel, Ergonomic, USB",
+        "titleAR": "سمات",
+        "infoAR": "ألعاب, بلوتوث, سفر, مريح, USB"
+      },
+      {
+        "title": "Model Number",
+        "info": "9S7-16R512-090",
+        "titleAR": "رقم الموديل",
+        "infoAR": "9S7-16R512-090"
+      },
+      {
+        "title": "Model Name",
+        "info": "Laptop MSI GF63 Thin 10SCXR - I7",
+        "titleAR": "اسم الموديل",
+        "infoAR": "Laptop MSI GF63 Thin 10SCXR - I7"
+      }
+    ],
+    "brand": "MSI",
+    "brandAR": "إم اس آي",
+    "category": "laptops",
+    "price": 23999,
+    "prevPrice": "",
     "rating": {
-      "rate": 5,
-      "count": 38,
-      "comments": [
-        {
-          "username": "Joe",
-          "date": "22/2/2023",
-          "rate": 5
-        }
-      ]
+      "rate": 0,
+      "count": 0,
+      "comments": []
+    },
+    "colors": [
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/wBq0kg9B/p3i1.png",
+    "images": [
+      "https://i.postimg.cc/wBq0kg9B/p3i1.png",
+      "https://i.postimg.cc/V6Tg1tnS/p3i2.png",
+      "https://i.postimg.cc/250TcM57/p3i3.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Galaxy A03",
+    "titleAR": "جالاكسي A03",
+    "description": "Galaxy A03 Core Dual SIM Onyx Black 2GB RAM 32GB LTE - Middle East Version",
+    "descriptionAR": "Galaxy A03 Core Dual SIM Onyx Black 2GB RAM 32GB LTE - Middle East Version",
+    "fullDescription": "Samsung is committed to complying with local laws and regulations as well as applying a strict global code of conduct to all employees. It believes that ethical management is not only a tool for responding to the rapid changes in the global business environment, but also a vehicle for building trust with its various stakeholders including customers, shareholders, employees, business partners and local communities. With an aim to become one of the most ethical companies In the world, Samsung continues to train its employees and operate monitoring systems, while practicing fair and transparent corporate management.Samsung follows a simple business philosophy to devote its talent and technology to creating superior products and services that contribute to a better global society. To achieve this, Samsung sets a high value on its people and technologies.Samsung believes that living by strong values is the key to good business.",
+    "fullDescriptionAR": "تلتزم سامسونج بالامتثال للقوانين واللوائح المحلية وتطبيق مدونة قواعد سلوك عالمية صارمة على جميع الموظفين. وهي تعتقد أن الإدارة الأخلاقية ليست أداة للاستجابة للتغيرات السريعة في بيئة الأعمال التجارية العالمية فحسب، بل هي أيضاً وسيلة لبناء الثقة مع مختلف أصحاب المصلحة فيها، بمن فيهم العملاء والمساهمون والموظفون وشركاء الأعمال والمجتمعات المحلية. بهدف أن تصبح واحدة من أكثر الشركات الأخلاقية في العالم، تواصل سامسونج تدريب موظفيها وتشغيل أنظمة المراقبة مع ممارسة إدارة عادلة وشفافة للشركات. تتبع سامسونج فلسفة عمل بسيطة: تكريس موهبتها وتقنيتها لإنشاء منتجات وخدمات متفوقة تساهم في بناء مجتمع عالمي أفضل. ولتحقيق ذلك، تضع سامسونج قيمة عالية على موظفيها وتقنياتها. تعتقد سامسونج أن العيش بقيم قوية هو مفتاح العمل الجيد.",
+    "additionalInfo": [
+      {
+        "title": "Expandable Memory Type",
+        "info": "MicroSD",
+        "titleAR": "نوع الذاكرة القابلة للزيادة",
+        "infoAR": "بطاقة بطاقة MicroSD"
+      },
+      {
+        "title": "Secondary Camera Resolution",
+        "info": "5 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "5 MP"
+      },
+      {
+        "title": "Charging Type",
+        "info": "Micro USB",
+        "titleAR": "نوع الشحن",
+        "infoAR": "Micro USB"
+      },
+      {
+        "title": "SIM Type",
+        "info": "Nano SIM",
+        "titleAR": "نوع الشريحة",
+        "infoAR": "بطاقة SIM نانو"
+      },
+      {
+        "title": "SIM Count",
+        "info": "Dual SIM",
+        "titleAR": "عدد شريحة Sim",
+        "infoAR": "مزدوج الشريحة"
+      },
+      {
+        "title": "Operating System",
+        "info": "Android",
+        "titleAR": "نظام التشغيل",
+        "infoAR": "أندرويد"
+      },
+      {
+        "title": "Secondary Camera",
+        "info": "5 - 7.9 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "5 - 7.9 ميجابكسل"
+      },
+      {
+        "title": "RAM Size",
+        "info": "2 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "2 GB"
+      },
+      {
+        "title": "Battery Size",
+        "info": "5000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "5000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "32 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "32 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "Super AMOLED",
+        "titleAR": "نوع العرض",
+        "infoAR": "شاشة AMOLED"
+      },
+      {
+        "title": "Screen Size",
+        "info": "6 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "6 In"
+      },
+      {
+        "title": "Primary Camera Resolution",
+        "info": "8 MP",
+        "titleAR": "دقة الكاميرا الأساسية",
+        "infoAR": "8 MP"
+      }
+    ],
+    "brand": "Samsung",
+    "brandAR": "سامسونج",
+    "category": "smartphones",
+    "price": 3199,
+    "prevPrice": 3599,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
+    },
+    "colors": [
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      },
+      {
+        "id": 2,
+        "name": "Blue",
+        "nameAR": "أزرق"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/x1ZNVnBt/p4i1.png",
+    "images": [
+      "https://i.postimg.cc/x1ZNVnBt/p4i1.png",
+      "https://i.postimg.cc/FHzk67CY/p4i2.png",
+      "https://i.postimg.cc/CLmfJj7y/p4i3.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Redmi Note 12",
+    "titleAR": "ريدمي نوت 12",
+    "description": "Redmi Note 12 Dual SIM Onyx Gray 6GB RAM 128GB 4G - Global Version",
+    "descriptionAR": "هاتف ريدمي نوت 12 ثنائي الشريحة بذاكرة رام سعة 6 جيجابايت وذاكرة داخلية سعة 128 جيجابايت ويدعم تقنية 4G بلون رمادي أونيكس - إصدار عالمي",
+    "fullDescription": "The Redmi Note 12 brings an exquisite level of detail to your viewing experience with its 6.67-inch AMOLED Display – perfect for watching movies, playing games, or even just scrolling through social media. Plus, with a full 50MP + 8MP + 2MP Rear Camera and a 13MP Front Camera, you can snap photos crisp, clear, and vivid enough to make all your friends jealous of your shots! It’s Android 13 Operating System is everything you need to get the most out of your phone – enjoy smooth functionality as you take on the day’s tasks. Paired with a long-lasting 5000mAh Battery, the Redmi Note 12 is the perfect choice for busy lifestyles.",
+    "fullDescriptionAR": "يوفر Redmi Note 12 مستوى رائعًا من التفاصيل لتجربة المشاهدة من خلال شاشة AMOLED مقاس 6.67 بوصة - وهي مثالية لمشاهدة الأفلام أو ممارسة الألعاب أو حتى مجرد التمرير عبر الوسائط الاجتماعية. بالإضافة إلى ذلك ، مع كاميرا خلفية 50 ميجابكسل + 8 ميجابكسل + 2 ميجابكسل وكاميرا أمامية بدقة 13 ميجابكسل ، يمكنك التقاط صور واضحة ونقية وحيوية بما يكفي لجعل جميع أصدقائك يشعرون بالغيرة من لقطاتك! إنه نظام التشغيل Android 13 هو كل ما تحتاجه لتحقيق أقصى استفادة من هاتفك - تمتع بالوظائف السلسة أثناء قيامك بمهام اليوم. يقترن Redmi Note 12 ببطارية تدوم طويلاً 5000 مللي أمبير في الساعة ، وهو الخيار الأمثل لأنماط الحياة المزدحمة.",
+    "additionalInfo": [
+      {
+        "title": "Expandable Memory Type",
+        "info": "MicroSD",
+        "titleAR": "نوع الذاكرة القابلة للزيادة",
+        "infoAR": "بطاقة MicroSD"
+      },
+      {
+        "title": "Secondary Camera Resolution",
+        "info": "13 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "13 MP"
+      },
+      {
+        "title": "Charging Type",
+        "info": "Type-C",
+        "titleAR": "نوع الشحن",
+        "infoAR": "نوع C"
+      },
+      {
+        "title": "SIM Type",
+        "info": "Nano SIM",
+        "titleAR": "نوع الشريحة",
+        "infoAR": "بطاقة SIM نانو"
+      },
+      {
+        "title": "SIM Count",
+        "info": "Dual SIM",
+        "titleAR": "عدد شريحة Sim",
+        "infoAR": "مزدوج الشريحة"
+      },
+      {
+        "title": "Operating System",
+        "info": "Android",
+        "titleAR": "نظام التشغيل",
+        "infoAR": "أندرويد"
+      },
+      {
+        "title": "Secondary Camera",
+        "info": "12 - 15.9 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "12 - 15.9 ميجابكسل"
+      },
+      {
+        "title": "RAM Size",
+        "info": "6 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "6 GB"
+      },
+      {
+        "title": "Battery Size",
+        "info": "5000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "5000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "128 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "128 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "AMOLED",
+        "titleAR": "نوع العرض",
+        "infoAR": "أموليد"
+      },
+      {
+        "title": "Screen Size",
+        "info": "6.67 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "6.67 In"
+      },
+      {
+        "title": "Primary Camera Resolution",
+        "info": "50 MP",
+        "titleAR": "دقة الكاميرا الأساسية",
+        "infoAR": "50 MP"
+      }
+    ],
+    "brand": "Xiaomi",
+    "brandAR": "شاومي",
+    "category": "smartphones",
+    "price": 7233,
+    "prevPrice": 7533,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
+    },
+    "colors": [
+      {
+        "id": 1,
+        "name": "Onyx Gray",
+        "nameAR": "رمادي أونيكس"
+      },
+      {
+        "id": 2,
+        "name": "Ice Blue",
+        "nameAR": "أزرق جليدي"
+      },
+      {
+        "id": 3,
+        "name": "Mint Green",
+        "nameAR": "أخضر مينت"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/qv4JzRC1/p5i1.png",
+    "images": [
+      "https://i.postimg.cc/qv4JzRC1/p5i1.png",
+      "https://i.postimg.cc/BQxZSDt8/p5i2.png",
+      "https://i.postimg.cc/SN0NbVQF/p5i3.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "DELL G15",
+    "titleAR": "ديل G15",
+    "description": "DELL 5520-G15 Gaming Laptop With 15.6 Inch Intel Core i7-12700H/16GB RAM/512 GB SSD/6 GB Nvidia GeForce RTX 3060 Series/Ubuntu English Black/Dark Shadow Grey.",
+    "descriptionAR": "لابتوب Gf63 Thin 10Sc بشاشة بدقة كاملة الوضوح مقاس 15.6 بوصة ومعالج إنتل كور I7-10750H/ذاكرة رام سعة 8 جيجابايت/محرك أقراص صلبة HDD سعة 1 تيرابايت/محرك أقراص SSD سعة 256 جيجابايت/بطاقة رسومات إنفيديا جيفورس Gtx 1650 سعة 4 جيجابايت/نظام DOS الإنجليزية/العربية أسود",
+    "fullDescription": "Latest 10th Gen. Intel Core i7 processor powers up with up to 15% performance gains over the previous generation. Higher single core frequency is better for gaming experience. All juiced up for unplugged productivity and entertainment. MSI’s exclusive Dragon Center software helps you control and customize your MSI laptop the way you want. Monitor, adjust and optimize easily through one unified system. Developed under an exclusive partnership with BlueStacks, the MSI APP Player provides a seamless gaming experience between mobile gaming and the PC. It enables gamers to utilize customizable features such as RGB keyboard lighting, better graphics, and multi-tasking. Dreamed of a keyboard with intense lighting? Experience the SteelSeries silver-lining printing keyboard with intense red, that is also built to last. Immerse yourself in lossless music and enjoy the premium sound quality with Hi-Resolution Audio. Experience and listen to audio the way it was intended. Enjoy more immersive gameplay in an even more compact chassis. Get a clear view of the game at any angle with brilliant clarity and contrast with IPS-Level panel.",
+    "fullDescriptionAR": "يوفر أحدث معالج Intel Core i7 من الجيل العاشر ما يصل إلى 15% من مكاسب الأداء مقارنة بالجيل السابق. يعد التردد الأساسي الفردي الأعلى أفضل لتجربة الألعاب. كل ذلك مُجهز لتحقيق إنتاجية وترفيه غير متصلين. يساعدك برنامج Dragon Center الحصري من MSI على التحكم في الكمبيوتر المحمول MSI الخاص بك وتخصيصه بالطريقة التي تريدها. يمكنك المراقبة والضبط والتحسين بسهولة من خلال نظام واحد موحد. تم تطوير MSI APP Player بموجب شراكة حصرية مع BlueStacks، ويوفر تجربة لعب سلسة بين ألعاب الهاتف المحمول والكمبيوتر. فهو يمكّن اللاعبين من الاستفادة من الميزات القابلة للتخصيص مثل إضاءة لوحة المفاتيح RGB ورسومات أفضل وتعدد المهام. حلمت بلوحة مفاتيح ذات إضاءة شديدة؟ استمتع بتجربة لوحة المفاتيح المطبوعة ذات البطانة الفضية من SteelSeries باللون الأحمر الغامق، والتي تم تصميمها أيضًا لتدوم طويلاً. انغمس في الموسيقى التي لا تفقد البيانات واستمتع بجودة الصوت المتميزة مع الصوت عالي الدقة. تجربة والاستماع إلى الصوت بالطريقة المقصودة. استمتع بلعبة أكثر غامرة في هيكل أكثر إحكاما. احصل على رؤية واضحة للعبة من أي زاوية بوضوح وتباين رائعين مع لوحة IPS-Level.",
+    "additionalInfo": [
+      {
+        "title": "Operating System Version",
+        "info": "Free DOS",
+        "titleAR": "إصدار نظام التشغيل",
+        "infoAR": "فري دوس"
+      },
+      {
+        "title": "Display Resolution Type",
+        "info": "QHD",
+        "titleAR": "نوع دقة العرض",
+        "infoAR": "QHD"
+      },
+      {
+        "title": "Processor Speed",
+        "info": "4.7 GHz",
+        "titleAR": "نوع الشحن",
+        "infoAR": "4.7 GHz"
+      },
+      {
+        "title": "RAM Size",
+        "info": "16 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "16 GB"
+      },
+      {
+        "title": "Laptop Weight",
+        "info": "2.6 Kg & Above",
+        "titleAR": "وزن اللابتوب",
+        "infoAR": "2.6 كجم فأكثر"
+      },
+      {
+        "title": "Battery Size",
+        "info": "86000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "86000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "512 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "512 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "LED",
+        "titleAR": "نوع العرض",
+        "infoAR": "LED"
+      },
+      {
+        "title": "Graphics Memory Name",
+        "info": "Nvidia GeForce RTX Series",
+        "titleAR": "اسم ذاكرة الرسومات",
+        "infoAR": "بطاقة رسومات إنفيديا جي فورس من السلسلة RTX"
+      },
+      {
+        "title": "Screen Size",
+        "info": "15.6 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "15.6 In"
+      },
+      {
+        "title": "Display Resolution",
+        "info": "2560x1440",
+        "titleAR": "دقة الشاشة",
+        "infoAR": "2560x1440"
+      },
+      {
+        "title": "Processor Type",
+        "info": "Core I7",
+        "titleAR": "نوع المعالج",
+        "infoAR": "كور I7"
+      },
+      {
+        "title": "Processor Version Number/Generation",
+        "info": "12th Gen",
+        "titleAR": "رقم إصدار المعالج/الجيل",
+        "infoAR": "12th Gen"
+      },
+      {
+        "title": "Features",
+        "info": "Ergonomic, Personal, Travel, USB, Business",
+        "titleAR": "سمات",
+        "infoAR": "مريح, شخصي, سفر, USB, أعمال"
+      },
+      {
+        "title": "Model Number",
+        "info": "5520-G15-E001-GRY",
+        "titleAR": "رقم الموديل",
+        "infoAR": "5520-G15-E001-GRY"
+      },
+      {
+        "title": "Model Name",
+        "info": "DELL G15 2022",
+        "titleAR": "اسم الموديل",
+        "infoAR": "DELL G15 2022"
+      }
+    ],
+    "brand": "DELL",
+    "brandAR": "ديل",
+    "category": "laptops",
+    "price": 45975,
+    "prevPrice": 49975,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
+    },
+    "colors": [
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/hjgSX6qx/p6i1.png",
+    "images": [
+      "https://i.postimg.cc/hjgSX6qx/p6i1.png",
+      "https://i.postimg.cc/sD0DTTpd/p6i2.png",
+      "https://i.postimg.cc/Qd9NwcbB/p6i3.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "AE Active 24/7 Jogger",
+    "titleAR": "AE Active 24/7 Jogger",
+    "description": "All day style. Every day comfort.",
+    "descriptionAR": "نمط طوال اليوم. راحة كل يوم.",
+    "fullDescription": "",
+    "fullDescriptionAR": "",
+    "additionalInfo": [
+      {
+        "title": "Material",
+        "info": "Combination",
+        "titleAR": "المادة",
+        "infoAR": "Combination"
+      },
+      {
+        "title": "Colour Name",
+        "info": "CHARCOAL HEATHER GRAY",
+        "titleAR": "اسم اللون",
+        "infoAR": "CHARCOAL HEATHER GRAY"
+      },
+      {
+        "title": "Department",
+        "info": "Men",
+        "titleAR": "القسم",
+        "infoAR": "Men"
+      },
+      {
+        "title": "Material Composition",
+        "info": "69% Recycled Polyester, 25% Rayon, 6% Elastane",
+        "titleAR": "تكوين المادة",
+        "infoAR": "69% Recycled Polyester, 25% Rayon, 6% Elastane"
+      },
+      {
+        "title": "Item Pack Quantity",
+        "info": "Single",
+        "titleAR": "كمية العبوة",
+        "infoAR": "Single"
+      },
+      {
+        "title": "Pack Size",
+        "info": "Single",
+        "titleAR": "حجم العبوة",
+        "infoAR": "Single"
+      },
+      {
+        "title": "Model Number",
+        "info": "U-1229-4708-029",
+        "titleAR": "",
+        "infoAR": "U-1229-4708-029"
+      },
+      {
+        "title": "Model Name",
+        "info": "U-1229-4708-029",
+        "titleAR": "",
+        "infoAR": "U-1229-4708-029"
+      }
+    ],
+    "brand": "American Eagle",
+    "brandAR": "أمريكان إيجل",
+    "category": "men_fashion",
+    "price": 745,
+    "prevPrice": 1100,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
     },
     "sizes": [
       "XS",
       "S",
       "M",
-      "L"
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Black",
-      "White",
-      "Red",
-      "Blue"
-    ],
-    "fullDescription": {
-      "info": "Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.\n\nDolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.",
-      "additionalInfo": {
-        "lanel1": "Details",
-        "lanel2": "Details",
-        "lanel3": "Details",
-        "lanel4": "Details",
-        "lanel5": "Details"
+      {
+        "id": 1,
+        "name": "Black",
+        "nameAR": "أسود"
+      },
+      {
+        "id": 2,
+        "name": "Gray",
+        "nameAR": "رمادي"
       }
-    },
-    "thumbnail": "https://i.postimg.cc/jC0x2Kbw/6.jpg",
+    ],
+    "thumbnail": "https://i.postimg.cc/sD9FgrP4/p7i1.png",
     "images": [
-      "https://i.dummyjson.com/data/products/2/1.jpg",
-      "https://i.dummyjson.com/data/products/2/2.jpg",
-      "https://i.dummyjson.com/data/products/2/3.jpg",
-      "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      "https://i.postimg.cc/sD9FgrP4/p7i1.png",
+      "https://i.postimg.cc/pdr3C5ws/p7i2.png",
+      "https://i.postimg.cc/3R45809k/p7i3.png",
+      "https://i.postimg.cc/DzY33PQV/p7i4.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Reno 8T",
+    "titleAR": "رينو 8T",
+    "description": "Reno 8T Dual SIM Midnight Black 8GB RAM 256GB 4G LTE- Middle East Version.",
+    "descriptionAR": "هاتف رينو 8T ثنائي الشريحة باللون الأسود الداكن وذاكرة الوصول العشوائي (RAM) سعة 8 جيجابايت وذاكرة داخلية 256 جيجابايت ويدعم تقنية 4G LTE - إصدار الشرق الأوسطx",
+    "fullDescription": "OPPO Reno 8T Dual SIM 6.43 inches Smartphone 256GB 8GB RAM|UAE Version|5000mAh Long Lasting Battery |Fingerprint and Face Recognition | 4G Android Phone, Midnight Black| Octa Core Processor and 8GB RAM Offers efficient multitasking and fast charging | 100mp primary camera extra HD, Bokeh flare portrait Selfie HDR.",
+    "fullDescriptionAR": "هاتف ذكي OPPO Reno 8T ثنائي الشريحة مقاس 6.43 بوصة وذاكرة وصول عشوائي سعة 256 جيجابايت وذاكرة وصول عشوائي سعتها 8 جيجابايت | إصدار الإمارات العربية المتحدة | بطارية طويلة الأمد بقدرة 5000 مللي أمبير في الساعة | بصمة الإصبع والتعرف على الوجه | هاتف أندرويد 4G، أسود منتصف الليل| معالج ثماني النواة وذاكرة وصول عشوائي سعتها 8 جيجابايت يوفر تعدد المهام الفعال والشحن السريع | كاميرا أساسية بدقة 100 ميجابكسل فائقة الدقة، وصورة شخصية Bokeh Flare، وصورة سيلفي HDR.",
+    "additionalInfo": [
+      {
+        "title": "Expandable Memory Type",
+        "info": "MicroSD",
+        "titleAR": "نوع الذاكرة القابلة للزيادة",
+        "infoAR": "بدون ذاكرة قابلة للزيادة"
+      },
+      {
+        "title": "Secondary Camera Resolution",
+        "info": "32 MP",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "32 MP"
+      },
+      {
+        "title": "Charging Type",
+        "info": "Type-C",
+        "titleAR": "نوع الشحن",
+        "infoAR": "نوع C"
+      },
+      {
+        "title": "SIM Type",
+        "info": "Nano SIM",
+        "titleAR": "نوع الشريحة",
+        "infoAR": "بطاقة SIM نانو"
+      },
+      {
+        "title": "SIM Count",
+        "info": "Dual SIM",
+        "titleAR": "عدد شريحة Sim",
+        "infoAR": "مزدوج الشريحة"
+      },
+      {
+        "title": "Operating System",
+        "info": "Android",
+        "titleAR": "نظام التشغيل",
+        "infoAR": "أندرويد"
+      },
+      {
+        "title": "Secondary Camera",
+        "info": "32 MP & Above",
+        "titleAR": "دقة الكاميرا الثانوية",
+        "infoAR": "32 ميجابكسل فأكثر"
+      },
+      {
+        "title": "RAM Size",
+        "info": "8 GB",
+        "titleAR": "حجم ذاكرة الوصول العشوائي",
+        "infoAR": "8 GB"
+      },
+      {
+        "title": "Battery Size",
+        "info": "5000 MAh",
+        "titleAR": "حجم البطارية",
+        "infoAR": "5000 MAh"
+      },
+      {
+        "title": "Internal Memory",
+        "info": "256 GB",
+        "titleAR": "الذاكرة الداخلية",
+        "infoAR": "256 GB"
+      },
+      {
+        "title": "Display Type",
+        "info": "AMOLED",
+        "titleAR": "نوع العرض",
+        "infoAR": "أموليد"
+      },
+      {
+        "title": "Screen Size",
+        "info": "6.43 In",
+        "titleAR": "حجم الشاشة",
+        "infoAR": "6.43 In"
+      },
+      {
+        "title": "Primary Camera Resolution",
+        "info": "100 MP",
+        "titleAR": "دقة الكاميرا الأساسية",
+        "infoAR": "100 MP"
+      }
+    ],
+    "brand": "OPPO",
+    "brandAR": "أوبو",
+    "category": "smartphones",
+    "price": 10498,
+    "prevPrice": 11498,
+    "rating": {
+      "rate": 0,
+      "count": 0,
+      "comments": []
+    },
+    "colors": [
+      {
+        "id": 1,
+        "name": "Midnight Black",
+        "nameAR": "أسود ميدنايت"
+      },
+      {
+        "id": 2,
+        "name": "Sunset Orange",
+        "nameAR": "غروب الشمس البرتقالي"
+      }
+    ],
+    "thumbnail": "https://i.postimg.cc/bwNhQCpZ/p8i3.png",
+    "images": [
+      "https://i.postimg.cc/qMGr6VVf/p8i1.png",
+      "https://i.postimg.cc/527MpB2n/p8i2.png",
+      "https://i.postimg.cc/bwNhQCpZ/p8i3.png",
+      "https://i.postimg.cc/vHyMm8KL/p8i4.png"
     ]
   }
 ]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "titleEN": "Men Fashion",
+    "titleAR": "أزياء رجالي",
+    "cover": "https://i.postimg.cc/sD1NWZWp/1.jpg",
+    "descriptionEN": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+    "descriptionAR": "تسوق أفضل الملابس الرجالية مع خيارات متعددة للشراء",
+    "path": "/category/men_fashion"
+  },
+  {
+    "id": 2,
+    "titleEN": "Women Fashion",
+    "titleAR": "أزياء حريمي",
+    "cover": "https://i.postimg.cc/MH334zCM/2.jpg",
+    "descriptionEN": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+    "descriptionAR": "تسوق أفضل الملابس النسائية مع خيارات متعددة للشراء",
+    "path": "/category/women_fashion"
+  },
+  {
+    "id": 3,
+    "titleEN": "Kids Clothing",
+    "titleAR": "أزياء الأطفال",
+    "cover": "https://i.postimg.cc/05V4rCzk/3.jpg",
+    "descriptionEN": "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+    "descriptionAR": "تسوق أفضل الملابس للأطفال مع خيارات متعددة للشراء",
+    "path": "/category/kids_clothing"
+  }
+]
