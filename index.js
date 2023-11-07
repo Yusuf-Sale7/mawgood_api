@@ -82,7 +82,7 @@ app.post("/api/signup", (req, res) => {
                 error: true,
                 message: "An error occured, please try again!",
               });
-            }, 1000);
+            }, 300);
             return;
           }
         });
@@ -113,7 +113,7 @@ app.post("/api/signup", (req, res) => {
                   error: true,
                   message: "An error occured, please try again!",
                 });
-              }, 1000);
+              }, 300);
               return;
             }
 
@@ -124,7 +124,7 @@ app.post("/api/signup", (req, res) => {
         });
       }
     });
-  }, 1000);
+  }, 300);
 });
 
 // Edit Profile
@@ -252,14 +252,14 @@ app.post("/api/Signin", (req, res) => {
           error: true,
           errorType: "missingCredentials",
         });
-      }, 1000);
+      }, 300);
     } else if (!user) {
       setTimeout(() => {
         return res.json({
           error: true,
           errorType: "userNotFound",
         });
-      }, 1000);
+      }, 300);
     } else {
       if (password !== user.password) {
         setTimeout(() => {
@@ -267,13 +267,13 @@ app.post("/api/Signin", (req, res) => {
             error: true,
             errorType: "incorrectPassword",
           });
-        }, 1000);
+        }, 300);
       } else {
         delete user.password;
         const token = createToken(user);
         setTimeout(() => {
           res.json({ user, token });
-        }, 1000);
+        }, 300);
       }
     }
   });
@@ -340,7 +340,7 @@ app.get("/api/categories", (req, res) => {
 
       setTimeout(() => {
         res.json(result);
-      }, 1000);
+      }, 300);
     });
   });
 });
@@ -360,7 +360,7 @@ app.get("/api/top_categories", (req, res) => {
 
     setTimeout(() => {
       res.json(categories);
-    }, 1000);
+    }, 300);
   });
 });
 
@@ -379,7 +379,7 @@ app.get("/api/offers", (req, res) => {
 
     setTimeout(() => {
       res.json(offers);
-    }, 700);
+    }, 100);
   });
 });
 
@@ -542,7 +542,7 @@ app.get("/api/search/", (req, res) => {
     };
     setTimeout(() => {
       res.json(response);
-    }, 1000);
+    }, 300);
   });
 });
 
@@ -599,7 +599,7 @@ app.patch("/api/products", (req, res) => {
         res.json(response);
       });
     });
-  }, 1000);
+  }, 300);
 });
 
 // Product details
@@ -625,7 +625,7 @@ app.get("/api/product/:id", (req, res) => {
       };
       setTimeout(() => {
         res.json(response);
-      }, 1000);
+      }, 300);
     } else {
       const response = {
         error: true,
@@ -634,7 +634,7 @@ app.get("/api/product/:id", (req, res) => {
       };
       setTimeout(() => {
         res.json(response);
-      }, 1000);
+      }, 300);
     }
   });
 });
@@ -664,7 +664,7 @@ app.post("/api/product/similar", (req, res) => {
     };
     setTimeout(() => {
       res.json(response);
-    }, 1000);
+    }, 300);
   });
 });
 
@@ -681,7 +681,7 @@ app.get("/api/partners", (req, res) => {
     const partners = JSON.parse(data);
     setTimeout(() => {
       res.json(partners);
-    }, 1000);
+    }, 300);
   });
 });
 
@@ -747,7 +747,7 @@ app.get("/api/cart/:username", (req, res) => {
 
   setTimeout(() => {
     res.json({ user, shipping, totalPrice, cartProducts });
-  }, 1000);
+  }, 300);
 });
 
 // Edit user's cart >> Add / Delete / Update
@@ -987,7 +987,7 @@ app.get("/api/favorites/:username", (req, res) => {
 
   setTimeout(() => {
     res.json({ user, favorites });
-  }, 1000);
+  }, 300);
 });
 
 // Add product to favorites
@@ -1143,7 +1143,7 @@ app.post("/api/contact", (req, res) => {
           messageAR: "لقت تلقينا رسالتك، شكراً لإختيارك  موجود!",
         });
       });
-    }, 1000);
+    }, 300);
   });
 });
 
